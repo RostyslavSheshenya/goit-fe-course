@@ -1,0 +1,44 @@
+body {
+        font-family: "Playfair Display", serif;
+        color:#626262;
+        font-size: 20px;
+        line-height: 24px;
+}
+
+/*Задание 1*/
+
+.wrapper {
+        text-align: center;
+        width: 100%;
+
+}
+.wrapper-nav li{
+        display: inline-block;
+        list-style: none;
+        width: 15%;   
+}
+.wrapper-nav-item {
+        width: 100%;
+        text-align: center;
+}
+a {
+        text-decoration: none;
+}
+a:hover {
+        color: red;
+}
+
+/*Задание 2*/
+
+.main-content-box {
+        width: 470px;
+        text-align: justify;
+        margin: auto;
+}
+
+/*Задание 3*/
+
+.main-content {
+        display: inline-block;
+        width: 960px;
+}
