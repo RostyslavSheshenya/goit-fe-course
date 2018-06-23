@@ -40,7 +40,7 @@ p       {padding-right: 50px;
 }
 
 .main-content {
-        margin: auto;
+        margin: 0 auto;
         width: 960px;
         text-align: center;       
 }
