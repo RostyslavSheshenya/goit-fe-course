@@ -4,54 +4,67 @@ body {
         font-size: 14px;
         line-height: 24px;
 }
-.header {width: 100%}
-.main-menu-nav {
-        padding-left: 0px;
+
+/* Navigation*/
+
+.main-menu {
+        margin-top: 75px;
+        margin-bottom: 100px;
 }
-.main-menu-nav li {
-        list-style: none;
-        line-height: 24px;
+li{
         display: inline-block;
-        text-align: center;
+        list-style: none;
         width: 15%;
+        
+}
+a {
+        color: #626262;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
 }
 .main-menu-nav a:hover{
         color: #03a9f4;
 }
-.main-menu-nav a {
-        color: #626262;
-        text-transform: uppercase;
-        text-decoration: none;
-        width: 100%;
+.main-menu-nav {
         text-align: center;
-
 }
-ul {text-align: center}
+
+/* Section*/
+
+.main-content-box {
+        width: 470px;
+        text-align: justify;
+        margin: auto;      
+}
+p       {padding-right: 50px;
+}
 .main-content {
-        width: 900px;
-        margin-left: 150px;
-        padding-left: 20px;
+        margin: auto;
+        width: 960px;
+        text-align: center;       
 }
 .main-content-box {
-        margin-bottom: 135px;
-        padding-left: 0px;
         display: inline-block;
-                width: 420px;
-                
-}                   
-.main-content-box h4 {
-                font-family: "Ubuntu", sans-serif;
+        width: 470px;
+        text-align: justify;
+        margin-bottom: 130px;
+}        
+h4 {
+        font-family: "Ubuntu", sans-serif;
         text-transform: uppercase;
-        line-height: 17px;
         font-weight: 300;
+        line-height: 17px;
 }
-.main-content-box h2 {
+h2 {
         font-size: 30px;
         line-height: 36px;
-}
-.main-content-box p {
         
 }
+
+/* Botton*/
+
 footer {
         text-align: center;
 }
@@ -65,34 +78,3 @@ button {
         height: 60px;
         background-color: #fff;
         }
-
-
-
-
-
-
-
-
-
-/*a {
-  text-decoration: none;
-}
-li {
-font-family: 'Playfair Display', serif;
-  display: inline-block;
-  margin-left: 120px;
-}
-.nav {
-  text-align: center;
-  margin-top: 70px;
-}
-.box {
-  display: inline-block;
-  margin-top: 130px;
-  margin-left: 150px;
-}
-p {width: 420px;}
-footer {text-align: center;
-font-size: 25px;
-}
-
