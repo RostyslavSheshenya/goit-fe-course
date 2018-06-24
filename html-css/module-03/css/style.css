@@ -5,6 +5,8 @@ body {
         font-family: "Playfair Display", serif;
         color:#626262;
         font-size: 14px;
+        width: 1350px;        
+        
 }
 
 /* Navigation*/
@@ -79,6 +81,7 @@ footer {
         text-align: center;
         padding-top: 60px;
         padding-bottom: 70px;
+        width: 100%;
         
 }
 button {
