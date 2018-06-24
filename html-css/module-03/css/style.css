@@ -1,4 +1,5 @@
 *{margin: 0;
+        padding: 0;
 }
 body {
         font-family: "Playfair Display", serif;
@@ -12,55 +13,73 @@ body {
 .main-menu {
         padding-top: 75px;
         padding-bottom: 100px;
+        text-align: center;
 }
-li{
+
+.main-menu-nav li{
         display: inline-block;
         list-style: none;
+        width: 143px;
 }
+
 a {
         color: #626262;
         width: 100%;
-        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
 }
+
 .main-menu-nav a:hover{
         color: #03a9f4;
-}
-.main-menu-nav {
-        text-align: center;
 }
 
 /* Section*/
   
 .main-content {
         margin: 0 auto;
-        width: 960px;
-        
+        width: 960px; 
+        font-size: 0;     
 }
 .main-content-box {
         display: inline-block;
         width: 420px;
         text-align: justify;
-        padding-left: 29px;
-        padding-right: 29px;
-}        
+        margin-bottom: 130px;
+}   
 h4 {
+        font-size: 14px;
         font-family: "Ubuntu", sans-serif;
         text-transform: uppercase;
         font-weight: 300;
         line-height: 17px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 }
 h2 {
         font-size: 30px;
         line-height: 36px;
-        
+        padding-bottom: 30px;     
 }
+p {
+        font-size: 14px;
+}
+.main-content :nth-child(5){
+        margin-bottom: 0;
+}
+.main-content :last-child {
+        margin-bottom: 0;
+}
+.main-content :nth-of-type(2n) {
+        padding-left: 60px;
+} 
 
 /* Botton*/
 
 footer {
         text-align: center;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        
 }
 button {
         font-family: "Playfair Display", serif;
