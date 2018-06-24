@@ -48,6 +48,7 @@ p       {padding-right: 50px;
         display: inline-block;
         width: 470px;
         text-align: justify;
+        vertical-align: top;
 }        
 h4 {
         text-transform: uppercase;
