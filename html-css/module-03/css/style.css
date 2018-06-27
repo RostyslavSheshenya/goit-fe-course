@@ -4,8 +4,7 @@
 body {
         font-family: "Playfair Display", serif;
         color:#626262;
-        font-size: 14px;
-        width: 1350px;         
+        font-size: 14px;        
 }
 
 /* Navigation*/
@@ -37,29 +36,34 @@ a {
   
 .main-content {
         margin: 0 auto;
-        width: 900px; 
-        font-size: 0;    
+        width: 960px; 
+        font-size: 0; 
+        text-align: center;   
 }
 .main-content-box {
         display: inline-block;
         width: 420px;
         text-align: justify;
         margin-bottom: 130px;
-        vertical-align: top;
 }   
+img {
+        margin-bottom: 30px;
+        
+}
 h4 {
         font-size: 14px;
         font-family: "Ubuntu", sans-serif;
         text-transform: uppercase;
         font-weight: 300;
         line-height: 17px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
+        width: 420px;
 }
 h2 {
         font-size: 30px;
         line-height: 36px;
-        margin-bottom: 30px;     
+        margin-bottom: 30px; 
+        width: 420px; 
 }
 p {
         font-size: 14px;
@@ -71,9 +75,16 @@ p {
 .main-content :last-child {
         margin-bottom: 0;
 }
-.main-content :nth-of-type(2n) {
+.main-content :nth-child(2n+1) {
+        margin-right: 60px;
+}
+
+
+
+
+/*.main-content :nth-of-type(2n) {
         padding-left: 60px;
-} 
+}*/
 
 /* Botton*/
 
