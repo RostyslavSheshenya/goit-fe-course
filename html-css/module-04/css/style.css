@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* NAVIGATION*/
+nav {
+        padding-top: 40px;
+        padding-bottom: 110px;
+}
+.nav-unit {
+        font-family: "Roboto", sans-serif;
+  list-style: none;
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 700;
+  float: left;
+}
+
+.nav {
+  float: right;
+  width: 745px;
+  padding-top: 10px;  
+}
+
+.nav-unit:not(:nth-child(6n)) {
+  margin-right: 40px;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  float: left;
+  font-style: 30px;
+  line-height: 32px;
+  width: 340px;
+  
+}
+.logo-unit::first-letter {
+        color: #1abc9c;
+}
+.logo-unit {
+        float: right;
+        font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.logo-unit:hover {
+        color: #1abc9c;
+}
+
+.nav-unit-item:hover {
+        color: #1abc9c;
+}
+
+/* GALLERY*/
+/* Section title */ 
+
+.section-title {
+        font-family: "Times New Roman", sans-serif;
+        font-size: 48px;
+        line-height: 32px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 135px;
+}
+.section-title::after {
+        content: "";
+        display: block;
+        background-color: #1abc9c;
+        width: 170px;
+        height: 5px;
+        margin: 0 auto;
+        margin-top: 35px;
+}
+
+/* Featured */
+
+.featured {
+        font-size: 0;
+        width: 1110px;
+        margin: 0 auto;
+}
+.featured-item-url {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 500;
+        color: white;
+        display: block;
+        width: 255px;
+        background-color: #acaeb2;
+        height: 40px;
+
+
+}
+span {
+        display: block;
+        background-color: #d7dedf;
+        float: right;
+        width: 55px;
+        height: 40px;
+}
+
+.featured-item {
+        float: left;
+        width: 255px;   
+}
+.featured-item:not(:nth-child(4n)) {
+        margin-right: 30px;
+}
+.featured-item:not(:nth-child(-4n)) {
+        margin-bottom: 30px;
+}
+
+

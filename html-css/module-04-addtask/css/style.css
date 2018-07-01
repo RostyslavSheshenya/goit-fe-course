@@ -1,0 +1,77 @@
+body {
+        font-family: "Playfair Display", serif;
+        color:#626262;
+        font-size: 20px;
+        line-height: 24px;
+}
+
+/*Задание 1*/
+
+.wrapper-nav li{
+        display: inline-block;
+        list-style: none;
+        width: 15%;   
+}
+.wrapper-nav-item {
+        width: 100%;
+        text-align: center;
+}
+a {
+        text-decoration: none;
+        color:#626262;
+}
+a:hover {
+        color: red;
+}
+
+/*Задание 2*/
+
+.main-content-box1 {
+        width: 470px;
+        text-align: justify;
+        margin: auto;      
+}
+p       {padding-right: 50px;
+}
+
+/*Задание 3*/
+.wrapper {
+        
+}
+
+.main-content {
+        margin: 0 auto;
+        width: 960px;
+        text-align: center;       
+}
+.main-content-box {
+        display: inline-block;
+        width: 470px;
+        text-align: justify;
+        vertical-align: top;
+}        
+h4 {
+        text-transform: uppercase;
+        font-weight: 300;
+}
+
+/*Задание 4*/
+span {
+        color: black;
+        font-weight: 600;
+}
+
+.box { 
+        font-weight: 600;
+        color: black;
+        border: 1px solid rgb(51, 23, 211);
+        background: rgb(160, 155, 155);
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+
+}
+section {
+        height: 50px;
+        padding-left: 50px;
+}
