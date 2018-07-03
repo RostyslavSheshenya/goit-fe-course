@@ -52,7 +52,9 @@ a {
 }
 
 img {
-        margin-bottom: 30px;      
+        margin-bottom: 30px;  
+        filter: invert(1)
+
 }
 
 h4 {
