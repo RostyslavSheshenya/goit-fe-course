@@ -72,12 +72,12 @@ a {
   font-weight: 900;
   text-align: center;
   margin-bottom: 90px;
-  color: #555151;
+  color: #555252;
 }
 .section-galery::after {
   content: "";
   display: block;
-  background-color: rgb(26, 188, 156);
+  background-color: rgb(78, 198, 171);
   width: 164px;
   height: 7px;
   margin: 0 auto;
