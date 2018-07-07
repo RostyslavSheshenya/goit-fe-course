@@ -7,27 +7,32 @@
   content: "";
   clear: both;
 }
-
+body {
+        width: 100%;
+}
 /* NAVIGATION*/
 nav {
   padding-top: 40px;
-  padding-bottom: 110px;
+  padding-bottom: 105px;
 }
 .nav-unit {
-  font-family: "OpenSans", sans-serif;
   list-style: none;
-  font-size: 10px;
+  float: left;
+}
+.nav-unit-item {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
   line-height: 11px;
   font-weight: 700;
-  float: left;
+  color: #0f0101;
 }
 .nav {
   float: right;
-  width: 570px;
+  width: 595px;
   padding-top: 10px;
 }
 .nav-unit:not(:nth-child(6n)) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .logo {
   font-family: "Roboto", sans-serif;
@@ -35,19 +40,20 @@ nav {
   float: left;
   font-size: 30px;
   line-height: 32px;
-  width: 340px;
-}
+  width: 210px;
+  }
 .logo-unit::first-letter {
-  color: rgb(78, 198, 171);
+  color: #1abc9c;
+  font-weight: 900;
 }
 .logo-unit {
   float: right;
   font-weight: 300;
+  color: #555252;
 }
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
 }
 .logo-unit:hover {
   color: rgb(78, 198, 171);
@@ -62,11 +68,11 @@ a {
 .section-galery {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
-  line-height: 0.667;
-  font-weight: 500;
+  line-height: 32px;
+  font-weight: 900;
   text-align: center;
-  margin-bottom: 135px;
-  color: rgb(81, 81, 81);
+  margin-bottom: 90px;
+  color: #515151;
 }
 .section-galery::after {
   content: "";
@@ -75,7 +81,7 @@ a {
   width: 164px;
   height: 7px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 /* Featured */
@@ -88,24 +94,24 @@ a {
 h4 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 2.25;
+  line-height: 40px;
   font-weight: 500;
   color: rgb( 255, 255, 255 );
-  width: 186px;
+  width: 187px;
   background-color: rgb(50, 50, 50);
   height: 40px;
-  padding-left: 15px;
+  padding-left: 13px;
   display: inline-block;
 }
 span {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 2.25;
+  line-height: 40px;
   font-weight: 500;
   background-color: #767a7a;
   float: right;
-  width: 54px;
+  width: 55px;
   height: 40px;
   color: rgb(255, 255, 255);
 }
@@ -131,9 +137,11 @@ span::before {
 .featured-item:nth-child(8) {
   margin-right: 0;
 }
-.featured-item-url:hover h4,
+.featured-item-url:hover h4 {
+  background-color: rgb(19, 197, 159);
+}
 .featured-item-url:hover span {
-  background-color: rgb(78, 198, 171);
+  background-color:  rgb(118, 206, 187);  
 }
 
 /* Blog*/
@@ -142,10 +150,10 @@ span::before {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
   line-height: 32px;
-  font-weight: 500;
+  font-weight: 900;
   text-align: center;
-  margin-bottom: 120px;
-  color: rgb(85, 82, 82);
+  margin-bottom: 80px;
+  color: #555252;
 }
 .section-blog::after {
   content: "";
@@ -154,7 +162,7 @@ span::before {
   width: 164px;
   height: 7px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 .latest {
   font-size: 0;
@@ -164,20 +172,25 @@ span::before {
 .latest-item {
   float: left;
   width: 350px;
-  font-family: "Open Sans", sans-serif;
-  color: rgb(85, 82, 82);
-  text-align: justify;
+}
+.latest-item img {
+  margin-bottom: 14px;
 }
 h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #555252;
   font-size: 18px;
-  line-height: 1.857;
-  font-weight: 500;
-  margin-bottom: 35px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 27px;
 }
 p {
+  font-family: "Open Sans", sans-serif;
+  color: #555252;
+  font-weight: 400;
   font-size: 14px;
-  margin-bottom: 20px;
-  line-height: 1.444;
+  margin-bottom: 15px;
+  line-height: 26px;
 }
 .latest-item:nth-child(-n + 2) {
   margin-right: 40px;
@@ -188,22 +201,19 @@ h3::after {
   background-color: rgb(78, 198, 171);
   width: 138px;
   height: 3px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 button {
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 1.625;
-  /*background-color: #1abc9c;*/
-  color: #fff;
+  line-height: 26px;
+  color: #ffffff;
   width: 160px;
   height: 51px;
   text-align: center;
   border-radius: 3px;
+  border-width: 0px;
   background-color: rgb(78, 198, 171);
-  box-shadow: 1px 1.732px 5px 0px rgb(0, 0, 0);
-  margin-bottom: 85px;
-}
-button:hover {
-  background-color: rgb(14, 94, 94);
+  margin-bottom: 82px;
 }
