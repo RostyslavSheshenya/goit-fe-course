@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: -0.02em;
 }
 .clearfix::after {
   display: table;
@@ -8,7 +9,7 @@
   clear: both;
 }
 body {
-        width: 100%;
+    width: 100%;
 }
 /* NAVIGATION*/
 nav {
@@ -81,7 +82,7 @@ a {
   width: 164px;
   height: 7px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 37px;
 }
 
 /* Featured */
@@ -183,7 +184,7 @@ h3 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 p {
   font-family: "Open Sans", sans-serif;
@@ -202,7 +203,7 @@ h3::after {
   background-color: #4ec6ab;
   width: 138px;
   height: 3px;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 button {
   font-family: "Open Sans", sans-serif;
