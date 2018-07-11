@@ -190,7 +190,7 @@ p {
   color: #555252;
   font-weight: 400;
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   line-height: 26px;
 }
 .latest-item:nth-child(-n + 2) {
