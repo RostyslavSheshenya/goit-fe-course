@@ -210,6 +210,7 @@ background-color: transparent;
 }
 .hover-icon {
   margin-right: 8px;
+  display: inline-block;
 }
 .hover-icon:nth-child(3) {
   margin-right: 0;
@@ -218,7 +219,7 @@ background-color: transparent;
   width: 166px;
   margin: 79px auto 7px auto;
 }
-.hover-basket {
+.hover-basket  img {
   display: block;
   margin: 0 auto;
 }
