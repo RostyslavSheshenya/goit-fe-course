@@ -44,19 +44,13 @@ nav {
   float: left;
   font-size: 30px;
   line-height: 32px;
-  }
-.logo-unit::first-letter {
-  color: #1abc9c;
-  font-weight: 900;
-}
-.logo-unit {
-  float: right;
   font-weight: 300;
   color: #555252;
-}
-a {
-  text-decoration: none;
   text-transform: uppercase;
+  }
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
 }
 .nav-unit-item:hover {
   color: rgb(78, 198, 171);
@@ -76,7 +70,7 @@ main {
 display: inline-block;
 padding-left: 84px;
 }
-h1 {
+h2 {
   font-size: 60px;
 line-height: 82px;
 color: #fff;
@@ -117,14 +111,14 @@ background-color: #33cc99;
 .galery {
   margin-bottom: 100px;
 }
-h2 {
+h3 {
   font-size: 48px;
   color: #666666;
   font-weight: 800;
   text-align: center;
   margin-bottom: 80px;
 }
-h2::after {
+h3::after {
   content: "";
   display: block;
   background-color: #4ec6ab;
@@ -139,7 +133,7 @@ h2::after {
   margin: 0 auto;
   padding-bottom: 30px;
 }
-h4 {
+h5 {
   width: 187px;
   background-color: rgb(50, 50, 50);
   height: 40px;
