@@ -48,7 +48,7 @@ nav {
   font-weight: 300;
   color: #555252;
   text-transform: uppercase;
-  }
+}
 .logo::first-letter {
   color: #1abc9c;
   font-weight: 900;
@@ -56,43 +56,42 @@ nav {
 .nav-unit-item:hover {
   color: rgb(78, 198, 171);
 }
-main,header {
-  font-family: "Roboto", sans-serif;
-}
+main,
 header {
-  margin-bottom: 101px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* FIRST */
 
-.wrapper {
+.head-item {
+  width: 740px;
+  margin: 0 auto;
+}
+.head-h2 {
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+  font-weight: 800;
+  margin-bottom: 20px;
   padding-top: 208px;
 }
-h2 {
-  font-size: 60px;
-color: #fff;
-margin: 0;
-font-weight: 800;
-margin-bottom: 20px;
-text-align: center;
-}
-.first-h4 {
+.head-h4 {
   font-size: 24px;
   color: #fff;
   font-weight: 300;
-  padding-left: 430px;
 }
-.first {
+.head {
   background-image: url(../img/headimg.png);
-  height: 600px;
+  height: 599px;
   background-repeat: no-repeat;
   position: relative;
+  padding-bottom: 101px;
 }
 .right {
   width: 105px;
   height: 105px;
   border: 0;
-  background-color: rgb( 78, 198, 171 );
+  background-color: rgb(78, 198, 171);
   opacity: 0.651;
   position: absolute;
   right: 246px;
@@ -103,7 +102,7 @@ text-align: center;
   width: 105px;
   height: 105px;
   border: 0;
-  background-color: rgb( 78, 198, 171 );
+  background-color: rgb(78, 198, 171);
   opacity: 0.651;
   position: absolute;
   left: 246px;
@@ -111,14 +110,15 @@ text-align: center;
   z-index: 1;
 }
 .arrow:hover {
-background-color: rgb( 26, 188, 156 );
-opacity: 1;
+  background-color: rgb(26, 188, 156);
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* NEW COLLECTOIN */
 
 .galery {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 a {
   text-decoration: none;
@@ -143,19 +143,15 @@ h3::after {
   font-size: 0;
   width: 1110px;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
-h5 {
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
+.collection-item h5 {
   width: 187px;
   background-color: rgb(50, 50, 50);
   height: 40px;
   padding-left: 13px;
   display: inline-block;
 }
-.collection-item-url {
+.collection-item-text {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 40px;
@@ -163,14 +159,14 @@ h5 {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
-.collection-item-url span {
+.collection-item span {
   display: block;
   background-color: #767a7a;
- float: right;
+  float: right;
   width: 55px;
   height: 40px;
 }
-.collection-item-url span::before {
+.collection-item span::before {
   padding-left: 12px;
   content: "\0024";
 }
@@ -185,8 +181,8 @@ h5 {
 .collection-item:hover h5 {
   background-color: #1abc9c;
 }
-.collection-item:hover .collection-item-url span {
-  background-color:  #7fd9c7;
+.collection-item:hover span {
+  background-color: #7fd9c7;
 }
 footer {
   background-color: #333333;
@@ -195,7 +191,7 @@ footer {
 .footer {
   font-family: "OpenSans", sans-serif;
   font-size: 16px;
-  line-height: 88px;
+  padding-top: 36px;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -206,36 +202,38 @@ footer {
 .hover {
   width: 235px;
   height: 260px;
-  background-color: rgba( 0, 0, 0, 0.549 );
+  background-color: rgba(0, 0, 0, 0.549);
   margin: 10px;
   position: absolute;
   top: 0;
   z-index: 1;
   display: none;
 }
-.hover-icon, .hover-basket {
-  border-width: 0px;
-font-size: 0px;
-background-color: transparent;
-}
 .hover-icon {
   margin-right: 8px;
   display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.549);
 }
 .hover-icon:nth-child(3) {
   margin-right: 0;
 }
 .hover-wrapper {
   width: 166px;
-  margin: 79px auto 7px auto;
+  margin: 0 auto;
+  padding: 79px 0 0px 0;
 }
-.hover-basket  img {
+.hover-basket img {
   display: block;
   margin: 0 auto;
+  padding-top: 17px;
 }
 .collection-item:hover .hover {
   display: block;
 }
+.collection-item:hover .collection-item-img {
+  opacity: 0.5;
+}
 .hover-icon:hover {
   background-color: #33cc99;
+  border: 1px solid #33cc99;
 }
