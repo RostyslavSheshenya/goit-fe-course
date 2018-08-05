@@ -132,15 +132,6 @@ h3 {
   text-align: center;
   margin-bottom: 120px;
 }
-/*h3::after {
-  content: "";
-  display: block;
-  background-color: #4ec6ab;
-  width: 164px;
-  height: 7px;
-  margin: 0 auto;
-  margin-top: 34px;
-}*/
 .p-element {
   position: absolute;
   left: 45%;
@@ -176,9 +167,8 @@ h3 {
   width: 55px;
   height: 40px;
 }
-.collection-item span::before {
-  padding-left: 12px;
-  content: "\0024";
+.collection-item-text {
+  text-align: center;
 }
 .collection-item {
   float: left;
