@@ -9,7 +9,10 @@
   clear: both;
 }
 body {
- width: 100%
+ width: 100%;
+ width: 1600px;
+ margin: 0 auto;
+
 }
 
 /* NAVIGATION*/
@@ -86,9 +89,7 @@ header {
   background-repeat: no-repeat;
   position: relative;
   padding-top: 208px;
-  padding-bottom: 276px;
-  width: 1600px;
-  margin: 0 auto;
+  padding-bottom: 274px;
 }
 .right {
   width: 105px;
