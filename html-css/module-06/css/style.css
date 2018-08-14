@@ -26,11 +26,15 @@ body {
 }
 .menu-item:hover  a {
   color: #f38181;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
 }
 .menu-item:hover .line-hover {
   display: block;
   cursor: pointer;
   color: #f38181;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
 }
 .menu-item-url {
   font-size: 14px;
@@ -213,9 +217,13 @@ input {
 }  
 .icon:hover {
   background-color: #95e1d3;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
 }
 .team-container-box:hover .fon {
   display: block;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
 }
 .fon-wrapper {
   width: 380px;
