@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: "Montserratserif", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 1212px;
   margin: 0 auto;
 }
@@ -17,15 +17,6 @@ body {
   list-style: none;
   text-transform: uppercase;
 }
-/*.menu-item::after {
-  display: block;
-  opacity: 0;
-  content: "";
-  width: 50px;
-  height: 3px;
-  background-color: #f38181;
-  margin: 10px auto 0 auto;
-}*/
 .line-hover {
   width: 50px;
   height: 3px;
@@ -61,9 +52,6 @@ nav {
 
 /* Service*/
 
-.service {
-  padding-bottom: 90px;
-}
 h3 {
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
@@ -77,8 +65,9 @@ h2 {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 65px;
+  margin-bottom: 105px;
   color: #333333;
+  position: relative;
 }
 h2::after {
   content: "";
@@ -86,7 +75,9 @@ h2::after {
   height: 3px;
   background-color: #f38181;
   display: block;
-  margin: 40px auto 0 auto;
+  position: absolute;
+  left: 47%;
+  top: 72px;
 }
 h4 {
   font-size: 14px;
@@ -103,14 +94,21 @@ p {
 }
 .service-container {
   width: 380px;
-  display: flex;
-  justify-content: space-evenly;
+  position: relative;
+  /*display: flex;
+  justify-content: space-evenly;*/
+}
+.service-container-img {
+  position: absolute;
+  left: 25px;
+
 }
 .service-container:nth-child(-n+3) {
   margin-bottom: 95px;
 }
 .service-box {
   width: 300px;
+  margin-left: 80px;
 }
 .service-box h4 {
   margin-bottom: 20px;
@@ -120,23 +118,23 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.service-container-img {
-  display: inline-block;
-  text-align: center;
-}
 
 /* Team*/
 
 .team {
+  padding-top: 90px;
   padding-bottom: 95px;
 }
 .team-p {
   text-align: center;
   width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 95px auto;
 }
 .team-container-box-h4, .team-container-box-p {
   text-align: center;
+}
+.team-container-box-h4 {
+  margin-bottom: 15px;
 }
 .team-container-box-p {
   font-family: "Roboto", sans-serif;
@@ -150,11 +148,82 @@ p {
 }
 .team-container-box {
   width: 380px;
+  position: relative;
+}
+.team-container-photo {
+  margin-bottom: 30px;
 }
 
 /*Footer*/
 
 footer {
+  font-size: 0;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 11px;
 }
+span {
+  color: #f38181;
+}
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+  padding-left: 13px;
+  width: 230px;
+  height: 36px;
+  border: 1px solid #e5e5e5;
+  border-image: none;
+}
+.subscribe-button {
+  background-color: #95e1d3;
+  width: 150px;
+  height: 40px;
+  border: 0px; 
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+.foot {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.fon {
+  background-image: linear-gradient( 0deg, rgb( 252, 227, 138 ) 0%, rgb( 243, 129, 129 ) 100%);
+    width: 380px;
+    height: 470px;
+    box-shadow: 10px 10px 0px 1px rgb( 149, 225, 211 );
+    opacity: 0.8;
+    position: absolute; 
+    bottom: 88px;
+    display: none;
+  }
+.icon {
+  width: 58px;
+  height: 58px;
+  background-color: #fce38a;
+  border: 1px solid #f5b78e;
+  cursor: pointer;
+}  
+.icon:hover {
+  background-color: #95e1d3;
+}
+.team-container-box:hover .fon {
+  display: block;
+}
+.fon-wrapper {
+  width: 380px;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+  
