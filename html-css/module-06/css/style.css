@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body {
+.wrapper {
   font-family: "Montserrat", sans-serif;
-  width: 1212px;
+  max-width: 1212px;
   margin: 0 auto;
 }
 .logo {
@@ -111,7 +111,7 @@ p {
 .service-box h4 {
   margin-bottom: 20px;
 }
-.wrapper {
+.service-wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -275,7 +275,8 @@ input {
   font-size: 14px;
   font-weight: 400;
   color: #000;
-  
+  display: flex;
+  align-items: center;
 }
 
 
