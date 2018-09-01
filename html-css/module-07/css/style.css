@@ -2,11 +2,6 @@
   margin: 0;
   padding: 0;
 }
-/*html {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}*/
 body {
   width: 100%;
   max-width: 100%;
@@ -87,7 +82,7 @@ h2 {
   font-size: 16px;
   text-align: center;
   margin-bottom: 180px;
-  letter-spacing: 1.0px;
+  letter-spacing: 1px;
   color: #666666;
 }
 h3 {
@@ -151,9 +146,68 @@ footer {
   font-family: "Amiri", sans-serif;
   font-size: 16px;
   text-align: center;
-  letter-spacing: 1.0px;
+  letter-spacing: 1px;
   color: #666666;
+  margin-bottom: 75px;
 }
 footer h2 {
   color: #fff;
+}
+ input {
+  width: 460px;
+  height: 55px;
+  border-radius: 3px;
+  border: 0;
+}
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbbbb;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+  padding-left: 20px;
+
+}
+.subscribe-button {
+  width: 240px;
+  height: 65px;
+  text-align: center;
+  background-color: #fed136;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+}
+textarea {
+  width: 460px;
+  height: 215px;
+  border-radius: 3px;
+}
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbbbbb;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.container-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 945px;
+  margin: 0 auto 30px auto;
+}
+.container-form-input {
+  display: flex;
+  flex-direction: column;
+  height: 215px;
+  justify-content: space-between;
 }

@@ -59,10 +59,16 @@
             <h2>Contact Us</h2>
             <p class="contact-p">Proin iaculis purus consequat sem cure. </p>
             <form action="#">
-                <input name="name" type="text">
-                    <input name="e-mail" type="email" id="applicationEmail" maxlength="255" placeholder="Your E-mail..." required>
-                    <button class="subscribe-button" type="submit">Subscribe</button>
-                </form>
+                <div class="container-form"> 
+                    <div class="container-form-input">
+                <input name="user_name" type="text" maxlength="255" placeholder="Your name *" required>
+                <input name="user_e-mail" type="email" id="applicationEmail" maxlength="255" placeholder="Your E-mail *" required>
+                <input name="subject" placeholder="subject" maxlength="255" type="text">
+            </div>
+            <textarea name="user_message" id="" placeholder="Your message *" type="text" required cols="64" rows="20"></textarea>
+        </div>
+                <button class="subscribe-button" type="submit">Send message</button>
+            </form>
         </footer>
     </div>
 </body>
