@@ -3,12 +3,12 @@
   padding: 0;
 }
 body {
-  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 .wrapper {
   max-width: 1400px;
+  margin: 0 auto;
 }
 @font-face {
   font-family: "Alex Brush";
@@ -103,7 +103,7 @@ h3 {
 }
 .main-service-item {
   list-style: none;
-  width: 280px;
+  max-width: 280px;
 }
 .main-service {
   display: flex;
