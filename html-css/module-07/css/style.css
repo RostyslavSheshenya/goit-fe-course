@@ -163,7 +163,8 @@ footer h2 {
   padding-left: 20px;
   border: 0;
 }
-#name, #subject, #message {
+input[type="text"]
+{
   text-transform: capitalize;
 }
 input::placeholder {
