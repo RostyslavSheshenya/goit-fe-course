@@ -199,13 +199,14 @@ input:valid:not(:placeholder-shown) {
 textarea {
   width: 440px;
   height: 200px;
-  border-radius: 3px;
+  border-radius: 4px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: -0.25px;
   padding-top: 15px;
   padding-left: 20px;
+  resize: none;
 }
 textarea::placeholder {
   font-family: "Montserrat", sans-serif;
