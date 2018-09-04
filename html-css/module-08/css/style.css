@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;  
+}
+header {
+  min-height: 520px;
+  background-image: url(../img/bgiM.jpg);
+  padding-top: 20px; 
+  background-repeat: no-repeat;
+}
+input[type="text"] {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(51, 49, 49);
+  border:none;
+  background: none;
+  width: 60px;
+  height: 20px;
+}
+input[type="text"]::placeholder {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+/*input[type="text"]:focus {
+  width: 100px;
+}*/
+.sign {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  width: 85px;
+  height: 33px;
+  border: 3px solid white;
+  border-radius: 17px;
+  background: none;
+}
+form{
+  width: 150px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-align: center;
+  margin-top: 118px;
+  margin-bottom: 38px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.header-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  width: 230px;
+  margin: 17px auto 17px auto;
+}
+.find {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  background: #ff4e50;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+section {
+  padding-top: 70px;
+  padding-bottom: 57px;
+}
+h3{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 17px;
+}
+li{
+  width: 222px;
+  margin: 0 auto 28px auto;
+  list-style:none;
+}
+img {
+  display: block;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+img::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icon1.png);
+}
+li:nth-child(1):after{
+  background-image: url(../img/icon1.png);
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  text-align: center;
+}
+li p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+.see {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff4e50;
+  text-align: center;
+  border: 2px solid #ff4e50;
+  border-radius: 30px;
+  background: none;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
