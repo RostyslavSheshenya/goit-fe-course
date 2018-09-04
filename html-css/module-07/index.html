@@ -61,11 +61,11 @@
             <form action="#">
                 <div class="container-form"> 
                     <div class="container-form-input">
-                <input name="user_name" type="text" maxlength="255" placeholder="Your name *" required id="name">
-                <input name="user_e-mail" type="email" id="applicationEmail" maxlength="255" placeholder="Your E-mail *" required>
-                <input name="subject" placeholder="subject" maxlength="255" type="text" id="subject">
+                <input name="user_name" type="text" pattern="[A-Za-z]{2,60}" pattern="^[a-zA-Z]+$" placeholder="Your name *" required id="name">
+                <input name="user_e-mail" type="email" id="applicationEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Your E-mail *" required>
+                <input name="subject" placeholder="subject" maxlength="60" type="text" id="subject">
             </div>
-            <textarea name="user_message" id="message" placeholder="Your message *" type="text" required cols="64" rows="20" ></textarea>
+            <textarea name="user_message" id="message" placeholder="Your message *" type="text" required cols="64" rows="20" minlength="5" maxlength="255"></textarea>
         </div>
                 <button class="subscribe-button" type="submit">Send message</button>
             </form>

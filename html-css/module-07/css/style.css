@@ -2,33 +2,35 @@
   margin: 0;
   padding: 0;
 }
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 .wrapper {
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
 @font-face {
-  font-family: "Alex Brush";
+  font-family: "Nexa";
   font-style: italic;
-  src: url("../fonts/Alex Brush/alex-brush-v8-latin-regular.woff");
+  src: url("../fonts/Nexa-Rust-Script-L-0.ttf.woff");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
-  font-family: "Mohtserrat";
-  src: url("../fonts/Montserrat/montserrat-v12-latin-regular.woff2");
-}
-@font-face {
-  font-family: "Amiri";
-  src: url("../fonts/Amiri/amiri-v11-latin-italic.woff");
+  font-family: "Droid Serif";
+  src: url("../fonts/Droid-Serif-Italic.ttf.woff");
 }
 @font-face {
   font-family: "Roboto Slab";
   src: url("../fonts/Roboto Slab/roboto-slab-v7-latin-regular.woff2");
 }
 .logo {
-  font-family: "Alex Brush", sans-serif;
+  font-family: "Nexa", sans-serif;
+  font-weight: 300;
   font-size: 30px;
   margin: 0;
   color: #fed136;
@@ -51,7 +53,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 50px 0 125px 0;
-  max-width: 940px;
+  width: 940px;
   margin: 0 auto;
 }
 .menu {
@@ -65,7 +67,7 @@ nav {
 
 .service {
   padding-bottom: 120px;
-  max-width: 940px;
+  width: 940px;
   margin: 0 auto;
 }
 h2 {
@@ -78,11 +80,10 @@ h2 {
   margin-bottom: 10px;
 }
 .service-p {
-  font-family: "Amiri", sans-serif;
+  font-family: "Droid Serif", sans-serif;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 180px;
-  letter-spacing: 1px;
+  margin-bottom: 80px;
   color: #666666;
 }
 h3 {
@@ -102,7 +103,8 @@ h3 {
 }
 .main-service-item {
   list-style: none;
-  max-width: 280px;
+  width: 280px;
+  padding-top: 100px;
 }
 .main-service {
   display: flex;
@@ -135,17 +137,17 @@ h3 {
 /* Contact Us */
 
 footer {
+  width: 1400px;
   background-image: url(../img/bgi.png);
   background-repeat: no-repeat;
-  padding-bottom: 114px;
+  padding-bottom: 105px;
   margin: 0 auto;
   padding-top: 105px;
 }
 .contact-p {
-  font-family: "Amiri", sans-serif;
+  font-family: "Droid Serif", sans-serif;
   font-size: 18px;
   text-align: center;
-  letter-spacing: 1px;
   color: #666666;
   margin-bottom: 75px;
 }
@@ -163,10 +165,6 @@ footer h2 {
   padding-left: 20px;
   border: 0;
 }
-input[type="text"]
-{
-  text-transform: capitalize;
-}
 input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -175,12 +173,24 @@ input::placeholder {
   letter-spacing: -0.25px;
   text-transform: uppercase;
 }
-input:invalid:not(:placeholder-shown) {
+  input[name="user_name"]:invalid:not(:placeholder-shown) {
+    outline: 3px solid red;
+  }
+   input[name="user_e-mail"]:invalid:not(:placeholder-shown) {
   outline: 3px solid red;
 }
-input:valid:not(:placeholder-shown) {
-  outline: 3px solid green;
-}
+  input[name="user_name"]:valid:not(:placeholder-shown) {
+    outline: 3px solid green;
+  }
+   input[name="user_e-mail"]:valid:not(:placeholder-shown) {
+    outline: 3px solid green;
+  }
+  textarea:valid:not(:placeholder-shown) {
+    outline: 3px solid green;
+  }
+  textarea:invalid:not(:placeholder-shown) {
+    outline: 3px solid red;
+  }
 .subscribe-button {
   width: 240px;
   height: 65px;
@@ -197,15 +207,14 @@ input:valid:not(:placeholder-shown) {
   cursor: pointer;
 }
 textarea {
-  width: 440px;
-  height: 200px;
+  width: 420px;
+  height: 185px;
   border-radius: 4px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: -0.25px;
-  padding-top: 15px;
-  padding-left: 20px;
+  padding: 15px 20px;
   resize: none;
 }
 textarea::placeholder {
