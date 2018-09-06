@@ -44,7 +44,7 @@ input[type="text"]::placeholder {
 }
 form{
   width: 150px;
-  margin: 0 auto;
+  margin: 0 auto 118px auto;
 }
 h1 {
   font-size: 20px;
@@ -52,7 +52,6 @@ h1 {
   letter-spacing: 0.5px;
   color: #fff;
   text-align: center;
-  margin-top: 118px;
   margin-bottom: 38px;
 }
 h2 {
@@ -147,10 +146,9 @@ li p {
   }
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row-reverse;
     align-items: center;
-    width: 660px;
     margin: 0 auto 160px auto;
   }
   form, h1 {
@@ -172,7 +170,6 @@ li p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 500px;
     justify-content: space-between;
     align-content: center;
     margin: 0 auto 40px auto;
@@ -187,6 +184,10 @@ li p {
   }
   .see {
     width: 195px;
+  }
+  section {
+    padding-top: 75px;
+    padding-bottom: 40px;
   }
 }
 
