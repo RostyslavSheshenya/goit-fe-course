@@ -67,6 +67,7 @@ nav {
 
 main {
   max-width: 1400px;
+  margin: 0 auto;
 }
 .service {
   padding-bottom: 120px;
