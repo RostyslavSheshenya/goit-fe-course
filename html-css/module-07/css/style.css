@@ -3,7 +3,7 @@
   padding: 0;
 }
 .wrapper {
-  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 @font-face {
@@ -65,6 +65,9 @@ nav {
 
 /*Service*/
 
+main {
+  width: 1400px;
+}
 .service {
   padding-bottom: 120px;
   width: 940px;
