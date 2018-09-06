@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
 }
+body {
+  width: 100%;
+}
 .wrapper {
-  max-width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 @font-face {
@@ -66,7 +69,7 @@ nav {
 /*Service*/
 
 main {
-  max-width: 1400px;
+ 
   margin: 0 auto;
 }
 .service {
@@ -141,7 +144,7 @@ h3 {
 /* Contact Us */
 
 footer {
-  max-width: 1400px;
+  
   background-image: url(../img/bgi.png);
   background-repeat: no-repeat;
   padding-bottom: 98px;
