@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
- 
+ @media  screen and (min-width: 320px) {
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -153,11 +153,14 @@ li p {
   margin: 0 auto;
   display: block;
 }
-@media (min-width: 768px) {
+ }
+ @media screen and (min-width: 768px) and (max-width: 1439px) {
   header {background-image: url(../img/bgi.jpg);
     padding-top: 50px;
     min-height: 650px;
   }
+}
+  @media screen and (min-width: 768px) {      
   .container {
     display: flex;
     justify-content: space-around;
@@ -204,5 +207,39 @@ li p {
     padding-bottom: 40px;
   }
 }
+@media screen and (min-width: 1440px) {
+  header {background-image: url(../img/bgiD.jpg);
+    padding-top: 50px;
+    min-height: 650px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+  }
+  section {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+    li:nth-child(1) {
+      order: 0; 
+    }
+    li:nth-child(2) {
+      order: 3;
+    }
+    li:nth-child(3) {
+      order: 2;
+    }
+    li:nth-child(4) {
+      order: 4;
+    }
+  }
+
+
+
+
+
 
 
