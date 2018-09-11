@@ -4,34 +4,28 @@
 }
  @media  screen and (min-width: 320px) {
 .wrapper {
-  width: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;  
 }
 header {
-  min-height: 520px;
+  padding-bottom: 115px;
   background-image: url(../img/bgiM.jpg);
   padding-top: 20px; 
   background-repeat: no-repeat;
   background-size: 100%;
 }
-input[type="text"] {
+.log {
   font-size: 14px;
   font-weight: 700;
-  color: rgb(51, 49, 49);
+  color: #fff;
   border:none;
   background: none;
-  width: 60px;
-  height: 20px;
+  cursor: pointer;
 }
-input[type="text"]::placeholder {
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
+.container-button:hover {
+  border: 2px solid rgba(255, 255, 255, 1.0)
+ 
 }
-/*input[type="text"]:focus {
-  width: 100px;
-}*/
 .sign {
   font-size: 14px;
   font-weight: 700;
@@ -41,25 +35,27 @@ input[type="text"]::placeholder {
   border: 3px solid white;
   border-radius: 17px;
   background: none;
+  cursor: pointer;
 }
-form{
-  width: 150px;
+.container-button {
+  width: 132px;
   margin: 0 auto 118px auto;
+  border: 2px solid rgba(255, 255, 255, 0.0);
 }
 h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 17px;
+}
+h2 {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #fff;
   text-align: center;
   margin-bottom: 38px;
-}
-h2 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 17px;
 }
 .header-p {
   font-family: "Roboto", sans-serif;
@@ -82,6 +78,7 @@ h2 {
   height: 40px;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
 }
 section {
   padding-top: 70px;
@@ -152,12 +149,13 @@ li p {
   height: 40px;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
 }
  }
  @media screen and (min-width: 768px) and (max-width: 1439px) {
   header {background-image: url(../img/bgi.jpg);
     padding-top: 50px;
-    min-height: 650px;
+    padding-bottom: 182px;
   }
 }
   @media screen and (min-width: 768px) {      
@@ -168,10 +166,10 @@ li p {
     align-items: center;
     margin: 0 auto 160px auto;
   }
-  form, h1 {
+  .container-button, h2 {
     margin: 0;
   }
-  h2 {
+  h1 {
     font-size: 52px;
     margin-bottom: 45px;
   }
@@ -210,7 +208,7 @@ li p {
 @media screen and (min-width: 1440px) {
   header {background-image: url(../img/bgiD.jpg);
     padding-top: 50px;
-    min-height: 650px;
+    padding-bottom: 232px;
   }
   ul {
     display: flex;
