@@ -111,6 +111,7 @@ img {
 .wrap-img {
   margin: 0 auto 20px auto;
   position: relative;
+  width: 222px;
 }
 .wrap-img::after {
   content: "";
@@ -118,7 +119,7 @@ img {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 73px;
+  right: 37px;
   top: 85px;
 }
 .a::after {
@@ -146,6 +147,8 @@ li p {
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+  width: 217px;
+  margin: 0 auto;
 }
 .see {
   font-family: "Montserrat", sans-serif;
