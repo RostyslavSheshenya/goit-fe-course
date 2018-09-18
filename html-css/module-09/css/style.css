@@ -174,7 +174,7 @@ li p {
 @media screen and (min-width: 768px) {
   header {background-image: url(../img/bgi.jpg);
     padding-top: 50px;
-    padding-bottom: 182px;
+    padding-bottom: 177px;
   }
   ul {
     margin: 0 auto 40px auto;
@@ -216,7 +216,7 @@ li p {
 @media screen and (min-width: 1440px) {
   header {background-image: url(../img/bgiD.jpg);
     padding-top: 50px;
-    padding-bottom: 232px;
+    padding-bottom: 204px;
   }
   .wrap-img::after {
     right: 55px;
