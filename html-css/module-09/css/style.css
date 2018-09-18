@@ -173,6 +173,9 @@ li p {
     padding-top: 50px;
     padding-bottom: 182px;
   }
+  ul {
+    margin: 0 auto 40px auto;
+  }
   /*.login {
     margin-bottom: 160px;
   }*/
