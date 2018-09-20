@@ -220,9 +220,6 @@ li p {
   }
   .wrap-img::after {
     right: 55px;
-    header {background-image: url(../img/bgiD.jpg);
-      padding-top: 50px;
-      padding-bottom: 232px;
   }
   li:nth-child(1) {
     order: 0; 
@@ -236,15 +233,6 @@ li p {
   li:nth-child(4) {
     order: 4;
   }
-  /*.login {
-    margin-bottom: 160px;
-  }
-  .wrapper-button {
-    margin-bottom: 160px;
-  }
-  h2 {
-    margin-bottom: 160px;
-  }*/
 }
 
 
