@@ -21,12 +21,15 @@ header {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  border:none;
-  background: none;
+  width: 65px;
+  height: 33px;
+  border: 3px solid rgba(255, 255, 255, 0.0);
+  background: transparent;
   cursor: pointer;
 }
-.wrapper-button:hover {
-  border: 2px solid rgba(255, 255, 255, 1.0)
+.log:hover {
+  border: 3px solid rgba(255, 255, 255, 1.0);
+  border-radius: 17px;
  
 }
 .sign {
@@ -34,12 +37,15 @@ header {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  width: 85px;
+  width: 75px;
   height: 33px;
-  border: 3px solid white;
-  border-radius: 17px;
-  background: none;
+  border: 3px solid rgba(255, 255, 255, 0.0);
+  background: transparent;
   cursor: pointer;
+}
+.sign:hover {
+  border: 3px solid rgba(255, 255, 255, 1.0);
+  border-radius: 17px;
 }
 .wrapper-button {
   width: 150px;
@@ -176,22 +182,22 @@ li p {
     padding-top: 50px;
     padding-bottom: 177px;
   }
-  ul {
-    margin: 0 auto 40px auto;
-  }
-  /*.login {
-    margin-bottom: 160px;
-  }*/
   .wrapper-button {
-    margin-bottom: 160px;
+    margin-bottom: 0px;
   }
   h2 {
-    margin-bottom: 160px;
+    margin-bottom: 0px;
+  }
+  .login { 
+    min-height: 180px;
   }
   h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 52px;
-    margin-bottom: 45px;
+    margin: 0;
+  }
+  .h1 {
+    min-height: 150px;
   }
   .header-p {
     font-family: "Roboto", sans-serif;
@@ -203,7 +209,8 @@ li p {
     width: 225px;
   }
   h3 {
-    margin-bottom: 35px;
+    margin-bottom: 0px;
+    min-height: 55px;
   }
   .see {
     width: 195px;
@@ -217,6 +224,12 @@ li p {
   header {background-image: url(../img/bgiD.jpg);
     padding-top: 50px;
     padding-bottom: 204px;
+  }
+  li {
+    margin: 0;
+  }
+  ul {
+    min-height: 290px;;
   }
   .wrap-img::after {
     right: 55px;
