@@ -4,14 +4,26 @@
 }
 .wrapper {
   font-family: "Montserrat", sans-serif;
-  max-width: 1212px;
+  max-width: 1920px;
   margin: 0 auto;
 }
+header {
+  padding: 25px 0 214px 0;
+  background-image: url(../img/bgnd.jpg);
+  background-repeat: no-repeat;
+} 
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1)(min-resolution: 192dpi), (min-resolution: 2dppx) {
+  header {
+    background-image: url(../img/bgnd@2x.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
 .logo {
   font-size: 30px;
   font-weight: 700;
   margin: 0;
-  color: #99cccc;
+  color: #fff;
 }
 .menu-item {
   list-style: none;
@@ -25,46 +37,61 @@
   top: 25px;
 }
 .menu-item:hover a, .menu-item-url::after {
-  color: #f38181;
+  color: #fce38a;
   transition-duration: 200ms;
   transition-timing-function: linear;
   display: block;
 }
 .menu-item:hover .menu-item-url::after {
-  background-color: rgba( 243, 129, 129, 1.0 );
- 
+  background-color: rgba( 252, 227, 138, 1.0 );
 } 
 
-.menu-item:hover .line-hover {
+/*.menu-item:hover .line-hover {
   display: block;
   cursor: pointer;
   color: #f38181;
   transition-duration: 200ms;
   transition-timing-function: linear;
-}
+}*/
 .menu-item-url {
   font-size: 14px;
   font-weight: 600;
-  color: #99cccc;
+  color: #fff;
   text-decoration: none;
   position: relative;
 }
+.menu-item-button {
+  border:none;
+  background: transparent;
+}
+svg:hover {
+  fill: rgb( 252, 227, 138 ) 
+}
 nav {
   display: flex;
+  width: 1200px;
+  margin: 0 auto;
   justify-content: space-between;
-  padding: 25px 0 125px 0;
+  margin-bottom: 155px;
+  position: relative;
 }
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 491px;
+  width: 611px;
 }
-
-/* Service*/
-
+.head-h1 {
+  font-size: 150px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+  margin-top: 0;
+  color: #fff;
+}
 h3 {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script", cursive, sans-serif;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -75,12 +102,11 @@ h2 {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 105px;
   color: #333333;
   position: relative;
 }
-h2::after {
+.design-h2::after {
   content: "";
   width: 60px;
   height: 3px;
@@ -89,6 +115,10 @@ h2::after {
   position: absolute;
   left: 47%;
   top: 72px;
+}
+.head-h3 {
+  font-size: 72px;
+  color: #fff;
 }
 h4 {
   font-size: 14px;
@@ -101,6 +131,22 @@ p {
   font-weight: 400;
   line-height: 24px;
   color: #999999;
+}
+.learn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: 3px solid #fff;
+  width: 155px;
+  height: 35px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+button {
+  cursor: pointer;
 }
 .service-box {
   width: 300px;
