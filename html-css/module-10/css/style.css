@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 header {
-  padding: 25px 0 214px 0;
+  padding: 25px 0 212px 0;
   background-image: url(../img/bgnd.jpg);
   background-repeat: no-repeat;
 } 
@@ -105,6 +105,7 @@ h2 {
   margin-bottom: 105px;
   color: #333333;
   position: relative;
+  text-transform: uppercase;
 }
 .design-h2::after {
   content: "";
@@ -113,7 +114,7 @@ h2 {
   background-color: #f38181;
   display: block;
   position: absolute;
-  left: 47%;
+  left: 48%;
   top: 72px;
 }
 .head-h3 {
@@ -148,6 +149,15 @@ p {
 button {
   cursor: pointer;
 }
+main {
+  padding-top: 50px;
+  padding-bottom: 95px;
+  width: 1201px;
+  margin: 0 auto;
+}
+.service {
+  margin-bottom: 90px;
+}
 .service-box {
   width: 300px;
   padding-left: 60px;
@@ -173,29 +183,22 @@ button {
   left: 0px;
 }
 .service-box:nth-child(1)::before {
-  background-image: url(../img/img1.png);
+  background-image: url(../img/ALARM.svg);
 }
 .service-box:nth-child(2)::before {
-  background-image: url(../img/img2.png);
+  background-image: url(../img/LINE\ GRAPH.svg);
 }
 .service-box:nth-child(3)::before {
-  background-image: url(../img/img3.png);
+  background-image: url(../img/COMPUTER\ _\ OK.svg);
 }
 .service-box:nth-child(4)::before {
-  background-image: url(../img/img4.png);
+  background-image: url(../img/BOOK\ 2.svg);
 }
 .service-box:nth-child(5)::before {
-  background-image: url(../img/img5.png);
+  background-image: url(../img/HOME.svg);
 }
 .service-box:nth-child(6)::before {
-  background-image: url(../img/img6.png);
-}
-
-/* Team*/
-
-.team {
-  padding-top: 90px;
-  padding-bottom: 95px;
+  background-image: url(../img/IMAGE.svg);
 }
 .team-p {
   text-align: center;
@@ -282,7 +285,6 @@ button {
 /*Footer*/
 
 footer {
-  font-size: 0;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e5e5e5;
