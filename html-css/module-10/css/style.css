@@ -62,7 +62,7 @@ header {
   border:none;
   background: transparent;
 }
-svg:hover {
+.menu-item-button:hover .menu-item-icon {
   fill: rgb( 252, 227, 138 ) 
 }
 nav {
