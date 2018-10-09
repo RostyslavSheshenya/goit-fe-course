@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
 .wrapper {
   font-family: "Montserrat", sans-serif;
-  max-width: 1920px;
+  min-width: 1920px;
   margin: 0 auto;
 }
 header {
