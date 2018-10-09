@@ -11,13 +11,13 @@ header {
   padding: 25px 0 212px 0;
   background-image: url(../img/bgnd.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 } 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1)(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1)(-o-min-device-pixel-ratio: 2/1), (-o-min-device-pixel-ratio: 2/1)(min-resolution: 192dpi), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   header {
     background-image: url(../img/bgnd@2x.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 }
 
