@@ -11,11 +11,13 @@ header {
   padding: 25px 0 212px 0;
   background-image: url(../img/bgnd.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 } 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1)(min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1)(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1)(-o-min-device-pixel-ratio: 2/1), (-o-min-device-pixel-ratio: 2/1)(min-resolution: 192dpi), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   header {
     background-image: url(../img/bgnd@2x.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -38,21 +40,17 @@ header {
 }
 .menu-item:hover a, .menu-item-url::after {
   color: #fce38a;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
   display: block;
 }
 .menu-item:hover .menu-item-url::after {
   background-color: rgba( 252, 227, 138, 1.0 );
 } 
-
-/*.menu-item:hover .line-hover {
-  display: block;
-  cursor: pointer;
-  color: #f38181;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
-}*/
 .menu-item-url {
   font-size: 14px;
   font-weight: 600;
@@ -68,17 +66,27 @@ svg:hover {
   fill: rgb( 252, 227, 138 ) 
 }
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 155px;
   position: relative;
 }
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 611px;
 }
 .head-h1 {
@@ -167,10 +175,15 @@ main {
   margin-bottom: 20px;
 }
 .service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   list-style: none;
   min-height: 250px;
 }
@@ -221,8 +234,12 @@ main {
   font-style: italic;
 }
 .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .team-container-box {
   width: 380px;
@@ -233,8 +250,12 @@ main {
   right: 10px;
   top: -10px;
   z-index: 1;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .team-container-img:hover .fon {
   position: absolute;
@@ -242,11 +263,18 @@ main {
   top: -10px;
   z-index: 1;
   display: block;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .fon {
+  background-image: -webkit-gradient( linear, left bottom, left top, from(rgba( 252, 227, 138, 0.8 )), to(rgba( 243, 129, 129, 0.8 )));
+  background-image: -webkit-linear-gradient( bottom, rgba( 252, 227, 138, 0.8 ) 0%, rgba( 243, 129, 129, 0.8 ) 100%);
+  background-image: -o-linear-gradient( bottom, rgba( 252, 227, 138, 0.8 ) 0%, rgba( 243, 129, 129, 0.8 ) 100%);
   background-image: linear-gradient( 0deg, rgba( 252, 227, 138, 0.8 ) 0%, rgba( 243, 129, 129, 0.8 ) 100%);
   width: 380px;
   height: 470px;
@@ -265,14 +293,30 @@ main {
 .fon-wrapper {
   width: 380px;
   height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.icon-svg {
+  fill:#f38181;
+}
+.icon:hover .icon-svg {
+  fill: #fff;
 }
 .icon:hover {
-  background-color: #95e1d3;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  background-color: #f38181;
+  -webkit-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .team-container-img {
   background-color: #99cccc;
@@ -285,8 +329,12 @@ main {
 /*Footer*/
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-top: 1px solid #e5e5e5;
   padding-top: 11px;
   padding-bottom: 25px;
@@ -304,7 +352,9 @@ input {
   width: 230px;
   height: 36px;
   border: 1px solid #e5e5e5;
-  border-image: none;
+  -webkit-border-image: none;
+       -o-border-image: none;
+          border-image: none;
 }
 .subscribe-button {
   background-color: #95e1d3;
@@ -322,10 +372,10 @@ input {
   font-size: 14px;
   font-weight: 400;
   color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-
-  
-  
