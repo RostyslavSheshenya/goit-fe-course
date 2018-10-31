@@ -1,0 +1,16 @@
+{
+  "name": "HW-11",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "node-sass src/scss/style.scss -o src/css",
+    "scss:watch": "node-sass --watch src/scss/style.scss -o src/css",
+    "build": "npm run scss:build && npm run scss:watch"
+  },
+  "author": "Sheshenya Rostyslav",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
