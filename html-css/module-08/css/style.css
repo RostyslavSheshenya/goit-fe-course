@@ -38,7 +38,7 @@ header {
   cursor: pointer;
 }
 .container-button {
-  width: 132px;
+  width: 150px;
   margin: 0 auto 118px auto;
   border: 2px solid rgba(255, 255, 255, 0.0);
 }
@@ -234,7 +234,7 @@ li p {
       order: 4;
     }
   }
-
+  
 
 
 
