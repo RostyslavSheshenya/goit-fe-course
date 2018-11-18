@@ -42,6 +42,7 @@ const addLogin = function(login) {
     }
   } else {
     console.log("Ошибка! Логин должен быть от 4 до 16 символов!");
+    return;
   }
 };
 addLogin("Ajax"); // 'Логин успешно добавлен!'
