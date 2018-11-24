@@ -31,7 +31,7 @@ const addLogin = (newLogin, arrLogins) => {
 };
 
 addLogin("Ajax"); // 'Логин успешно добавлен!'
-console.log(logins);
+//console.log(logins);
 addLogin("robotGoogles"); // 'Такой логин уже используется!'
 addLogin("Zod"); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 addLogin("jqueryisextremelyfast"); // 'Ошибка! Логин должен быть от 4 до 16 символов'
