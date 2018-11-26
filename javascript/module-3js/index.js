@@ -8,7 +8,7 @@ const isLoginValid = login => login.length >= 4 && login.length <= 16;
 
 const isLoginUnique = (login, allLogins) => allLogins.includes(login);
 
-const addLogin = (newLogin, arrLogins) => {
+const addLogin = (newLogin, arrLogins = logins) => {
   if (!isLoginValid(newLogin)) {
     return errorSymbolLogin;
   }
@@ -20,7 +20,7 @@ const addLogin = (newLogin, arrLogins) => {
   }
 };
 
-addLogin("Ajax"); // 'Логин успешно добавлен!'
-addLogin("robotGoogles"); // 'Такой логин уже используется!'
-addLogin("Zod"); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-addLogin("jqueryisextremelyfast"); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+console.log(addLogin("Ajax"));
+console.log(addLogin("robotGoogles"));
+console.log(addLogin("Zod"));
+console.log(addLogin("jqueryisextremelyfast"));
