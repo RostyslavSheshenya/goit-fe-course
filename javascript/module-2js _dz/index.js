@@ -138,6 +138,22 @@ console.log(longestWord); // 'force'*/
     скрипт выводит сумму всех значений массива: "Сумма: <сумма всех значений в массиве>"
     Используйте цикл for...of
 */
+/*
+const emptyMussive = [];
+let total = 0;
+let addUss;
+let i;
+do {
+  addUss = prompt();
+  emptyMussive.push(+addUss);
+} while (addUss !== null);
+
+if (emptyMussive.length !== 0) {
+  for (i of emptyMussive) {
+    total += i;
+  }
+  console.log(total);
+}*/
 //=================================
 /*
   ***ЗАДАНИЕ ПОВЫШЕНОЙ СЛОЖНОСТИ***
@@ -167,3 +183,13 @@ console.log(longestWord); // 'force'*/
 */
 
 const numbers = [12, 15, 25, 37, 41];
+const min = prompt("Введите число x");
+const max = prompt("Введите число y");
+const addNum = +prompt("Введите цифру между x и y");
+if (isNaN(addNum)) {
+  alert("Было введено не число");
+} else if (numbers.includes(addNum)) {
+  alert("Поздравляем, Вы угадали!");
+} else {
+  alert("Сожалеем, Вы не угадали!");
+}

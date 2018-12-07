@@ -1,42 +1,95 @@
 "use strict";
-const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-const goodLogin = "Логин успешно добавлен!";
-const errorLogin = "Такой логин уже используется!";
-const errorSymbolLogin = "Ошибка! Логин должен быть от 4 до 16 символов!";
 
-const isLoginValid = login => login.length >= 4 && login.length <= 16;
-
-const isLoginUnique = (login, allLogins) => allLogins.includes(login);
-
-const addLogin = (newLogin, arrLogins = logins) => {
-  if (!isLoginValid(newLogin)) {
-    return errorSymbolLogin;
-  }
-  if (!isLoginUnique(newLogin, logins)) {
-    logins.push(newLogin);
-    return goodLogin;
-  } else {
-    return errorLogin;
-  }
+const products = {
+  bread: 10,
+  milk: 15,
+  apples: 20,
+  chicken: 50,
+  cheese: 40
 };
 
-console.log(addLogin("Ajax"));
-console.log(addLogin("robotGoogles"));
-console.log(addLogin("Zod"));
-console.log(addLogin("jqueryisextremelyfast"));
-
-const checkNumberType = num => {
-  if (num % 2 === 0) {
-    return "Even";
-  } else {
-    return "Odd";
-  }
+const order = {
+  bread: 2,
+  milk: 2,
+  apples: 1,
+  cheese: 1
 };
 
-console.log(checkNumberType(3)); // 'Even'
+function Cashier(name, productDatabase, customerMoney) {
+  let totalPrice = 0;
+  this.name = name;
+  this.productDatabase = productDatabase;
+  this.customerMoney = 0;
+  this.getCustomerMoney = value => {
+    this.customerMoney = value;
+    return customerMoney;
+  };
+  this.countTotalPrice = order => {
+    for (let key in order) {
+      const val = productDatabase[key] * order[key];
+      totalPrice += val;
+    }
+    return totalPrice;
+  };
+  this.countChange = () => {
+    if (this.customerMoney >= totalPrice) {
+      const change = this.customerMoney - totalPrice;
+      return change;
+    } else {
+      return null;
+    }
+  };
+  this.onSuccess = change => {
+    console.log(`Спасибо за покупку, ваша сдача ${change}!`);
+  };
+  this.onError = () => {
+    console.log("Очень жаль, вам не хватает денег на покупки");
+  };
 
-console.log(checkNumberType(46)); // 'Even'
+  this.reset = () => {
+    this.customerMoney = 0;
+  };
+}
 
-console.log(checkNumberType(3)); // 'Odd'
+//=====================================
+/* Пример использования */
+const mango = new Cashier("Mango", products);
 
-console.log(checkNumberType(17)); // 'Odd'
+// Проверяем исходные значения полей
+console.log(mango.name); // Mango
+console.log(mango.productDatabase); // ссылка на базу данных продуктов (объект products)
+console.log(mango.customerMoney); // 0
+
+// Вызываем метод countTotalPrice для подсчета общей суммы
+// передавая order - список покупок пользователя
+const totalPrice = mango.countTotalPrice(order);
+
+// Проверям что посчитали
+console.log(totalPrice); // 110
+
+// Вызываем getCustomerMoney для запроса денег покупателя
+mango.getCustomerMoney(300);
+
+// Проверяем что в поле с деньгами пользователя
+console.log(mango.customerMoney); // 300
+
+// Вызываем countChange для подсчета сдачи
+const change = mango.countChange();
+
+// Проверяем что нам вернул countChange
+console.log(change); // 190
+
+// Проверяем результат подсчета денег
+if (change !== null) {
+  // При успешном обслуживании вызываем метод onSuccess
+  mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
+} else {
+  // При неудачном обслуживании вызываем метод onError
+  mango.onError(); // Очень жаль, вам не хватает денег на покупки
+}
+
+// Вызываем reset при любом исходе обслуживания
+mango.reset();
+
+// Проверяем значения после reset
+console.log(mango.customerMoney); // 0
