@@ -1,59 +1,46 @@
-"use strict";
-
+'use strict';
 const products = {
-  bread: 10,
-  milk: 15,
-  apples: 20,
-  chicken: 50,
-  cheese: 40
+	bread: 10,
+	milk: 15,
+	apples: 20,
+	chicken: 50,
+	cheese: 40
 };
-
 const order = {
-  bread: 2,
-  milk: 2,
-  apples: 1,
-  cheese: 1
+	bread: 2,
+	milk: 2,
+	apples: 1,
+	cheese: 1
 };
-
 function Cashier(name, productDatabase, customerMoney) {
-  let totalPrice = 0;
-  this.name = name;
-  this.productDatabase = productDatabase;
-  this.customerMoney = 0;
-  this.getCustomerMoney = value => {
-    this.customerMoney = value;
-    return customerMoney;
-  };
-  this.countTotalPrice = order => {
-    for (let key in order) {
-      const val = productDatabase[key] * order[key];
-      totalPrice += val;
-    }
-    return totalPrice;
-  };
-  this.countChange = () => {
-    if (this.customerMoney >= totalPrice) {
-      const change = this.customerMoney - totalPrice;
-      return change;
-    } else {
-      return null;
-    }
-  };
-  this.onSuccess = change => {
-    console.log(`Спасибо за покупку, ваша сдача ${change}!`);
-  };
-  this.onError = () => {
-    console.log("Очень жаль, вам не хватает денег на покупки");
-  };
-
-  this.reset = () => {
-    this.customerMoney = 0;
-  };
+	this.name = name;
+	this.productDatabase = productDatabase;
+	this.customerMoney = 0;
+	this.getCustomerMoney = (value) => {
+		this.customerMoney = value;
+	};
+	this.countTotalPrice = (order) => {
+		let totalPrice = 0;
+		for (let key in order) {
+			totalPrice += productDatabase[key] * order[key];
+		}
+		return totalPrice;
+	};
+	this.countChange = () => (this.customerMoney >= totalPrice ? this.customerMoney - totalPrice : null);
+	this.onSuccess = (change) => {
+		console.log(`Спасибо за покупку, ваша сдача ${change}!`);
+	};
+	this.onError = () => {
+		console.log('Очень жаль, вам не хватает денег на покупки');
+	};
+	this.reset = () => {
+		this.customerMoney = 0;
+	};
 }
 
 //=====================================
 /* Пример использования */
-const mango = new Cashier("Mango", products);
+const mango = new Cashier('Mango', products);
 
 // Проверяем исходные значения полей
 console.log(mango.name); // Mango
@@ -81,11 +68,11 @@ console.log(change); // 190
 
 // Проверяем результат подсчета денег
 if (change !== null) {
-  // При успешном обслуживании вызываем метод onSuccess
-  mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
+	// При успешном обслуживании вызываем метод onSuccess
+	mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
 } else {
-  // При неудачном обслуживании вызываем метод onError
-  mango.onError(); // Очень жаль, вам не хватает денег на покупки
+	// При неудачном обслуживании вызываем метод onError
+	mango.onError(); // Очень жаль, вам не хватает денег на покупки
 }
 
 // Вызываем reset при любом исходе обслуживания
