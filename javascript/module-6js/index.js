@@ -38,9 +38,8 @@ class Hamburger {
      */
 	addTopping(topping) {
 		if (!this._toppings.includes(topping)) {
-			this._toppings.push(topping);
+			return this._toppings.push(topping);
 		}
-		return this._toppings;
 	}
 
 	/**
@@ -48,7 +47,7 @@ class Hamburger {
      * @param {String} topping - Тип добавки
      */
 	removeTopping(topping) {
-		this._toppings.pop(topping);
+		return this._toppings.splice(topping, 1);
 	}
 
 	/**
@@ -90,10 +89,11 @@ class Hamburger {
 
 	get calculatePrice() {
 		const getPriceTopping = this._toppings.map((topping) => Hamburger.TOPPINGS[topping].price);
-
-		getPriceTopping.push(Hamburger.SIZES[this._size].price, Hamburger.STUFFINGS[this._stuffing].price);
-		let calcPrice = getPriceTopping.reduce((acc, sum) => acc + sum, 0);
-		return calcPrice;
+		return (
+			Hamburger.SIZES[this._size].price +
+			Hamburger.STUFFINGS[this._stuffing].price +
+			getPriceTopping.reduce((acc, sum) => acc + sum, 0)
+		);
 	}
 
 	/**
@@ -104,9 +104,11 @@ class Hamburger {
      */
 	get calculateCalories() {
 		const getSumCalories = this._toppings.map((topping) => Hamburger.TOPPINGS[topping].calories);
-		getSumCalories.push(Hamburger.SIZES[this._size].calories, Hamburger.STUFFINGS[this._stuffing].calories);
-		let calcCalories = getSumCalories.reduce((acc, sum) => acc + sum, 0);
-		return calcCalories;
+		return (
+			Hamburger.SIZES[this._size].calories +
+			Hamburger.STUFFINGS[this._stuffing].calories +
+			getSumCalories.reduce((acc, sum) => acc + sum, 0)
+		);
 	}
 }
 
