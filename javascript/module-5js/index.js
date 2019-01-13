@@ -162,3 +162,20 @@ const getUsersByFriend = (arr, name) => arr.filter((x) => x.friends.includes(nam
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+//==============================================================================================================
+/**
+* Получить массив всех скиллов всех пользователей (поле skills), при этом не должно быть
+* повторяющихся скиллов и они должны быть отсортированы в алфавитном порядке
+*/
+//const getAllUniqueSkills = (arr) => arr.reduce((acc, x) => (x.skills ? acc.concat(x.skills) : acc), []).sort();
+
+console.log(getAllUniqueSkills(users));
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+
+/**
+* Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
+*/
+const getUserNamesSortedByFriendsCount = (arr) => arr.sort((x, y) => x.friends < y.friends).map((x) => x.name);
+
+console.log(getUserNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]

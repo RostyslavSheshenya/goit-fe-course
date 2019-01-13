@@ -316,9 +316,9 @@ const arrOrder = (obj) => {
 	return arr;
 };
 
-const getTotalPrice = (products, order);
-// Вызовы функции для проверки
-console.log(getTotalPrice(products, orderA)); // 140
+const getTotalPrice = (products, order) =>
+	// Вызовы функции для проверки
+	console.log(getTotalPrice(products, orderA)); // 140
 
 console.log(getTotalPrice(products, orderB)); // 130
 */
@@ -349,3 +349,5 @@ const allGuestsActive = (guests) => guests.every((y) => guests.isActive);
 console.log(allGuestsActive(guestsA)); // false
 
 console.log(allGuestsActive(guestsB)); // true
+
+//===================================================================================================
