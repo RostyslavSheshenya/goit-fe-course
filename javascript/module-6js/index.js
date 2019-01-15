@@ -38,7 +38,7 @@ class Hamburger {
      */
 	addTopping(topping) {
 		if (!this._toppings.includes(topping)) {
-			return this._toppings.push(topping);
+			this._toppings.push(topping);
 		}
 	}
 
@@ -47,7 +47,7 @@ class Hamburger {
      * @param {String} topping - Тип добавки
      */
 	removeTopping(topping) {
-		return this._toppings.splice(topping, 1);
+		this._toppings = this._toppings.filter((x) => x !== topping);
 	}
 
 	/**
